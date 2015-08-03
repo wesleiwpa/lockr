@@ -153,6 +153,19 @@
   Lockr.flush = function () {
     localStorage.clear();
   };
+
+  Lockr.removeByIndex = function(query_key, index) {
+    var values = this.smembers(query_key);
+
+    values.splice(index, 1);
+
+    var json = JSON.stringify({
+        "data": values
+    });
+
+    localStorage.setItem(query_key, json);
+  };
+
   return Lockr;
 
 }));
