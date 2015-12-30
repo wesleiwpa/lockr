@@ -1,0 +1,7 @@
+name: wesleiwpa/lockr
+author:
+  name: Weslei Prudencio
+  email: wesleiprudencio@gmail.com
+  url: null
+copyright: 2015 Weslei Prudencio
+description: A minimal API wrapper for localStorage
